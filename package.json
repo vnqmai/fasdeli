@@ -9,13 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.8.2",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.2",
+    "@reduxjs/toolkit": "^1.8.0",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "redux-undo": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.41",
+    "@types/react-beautiful-dnd": "^13.1.2",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "typescript": "4.6.2"
