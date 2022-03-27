@@ -1,14 +1,25 @@
 import Component from '@/components/component';
 import { Box } from '@mui/material';
-import { useAppSelector } from 'hooks';
-import * as React from 'react';
+import { loadComponentsFromExternal } from 'actions/preview-actions';
+import { useAppDispatch, useAppSelector } from 'hooks';
+import React, { useEffect } from 'react';
 import { selectPreviewComponents } from 'selectors/preview-selectors';
 
 export interface IConsumerPageProps {
 }
 
 export default function ConsumerPage (props: IConsumerPageProps) {
+  const dispatch = useAppDispatch()
   const components = useAppSelector(selectPreviewComponents)
+
+  useEffect(() => {
+    const savedPreview = localStorage.getItem('saved_preview')
+    if (savedPreview) {
+      const preview = JSON.parse(savedPreview)
+      dispatch(loadComponentsFromExternal(preview))
+    }
+  }, [])
+
   return (
     <Box
       sx={{
