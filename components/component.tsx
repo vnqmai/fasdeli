@@ -33,6 +33,6 @@ Component.defaultProps = {
     name: '',
     props: {}
   },
-  handleEdit: () => {}
+  handleEdit: null
 }
 

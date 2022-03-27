@@ -15,8 +15,8 @@ export function Panel (props: IPanelProps) {
   
   const handleChange = async (e: Event, propName: string) => {
     let updatedProps = await componentProps.props.map(([key, value]) => {
-      if (key===propName && e?.target?.value) {
-        return [key, e.target.value]
+      if (key===propName) {
+        return [key, e?.target?.value || '']
       }
       return [key, value]
     })
