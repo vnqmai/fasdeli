@@ -23,4 +23,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - localstorage
 
 ## Demo
-[https://screencast-o-matic.com/watch/c3etDFVq1jm](Watch demo here)
+https://screencast-o-matic.com/watch/c3etDFVq1jm
