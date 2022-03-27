@@ -15,12 +15,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Tech in this project
 
 - Framework: NextJS
-- State management: Redux Toolkit
+- State management: Redux Toolkit, Redux Undo
 - Drag and drop library: react-beautiful-dn
 - UI library: Material UI
 
 ## Data saved on
+
 - localstorage
 
 ## Demo
+
 https://screencast-o-matic.com/watch/c3etDFVq1jm
