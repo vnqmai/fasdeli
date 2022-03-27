@@ -15,10 +15,12 @@ export default function Preview (props: IPreviewProps) {
   const components = useAppSelector(selectPreviewComponents)
 
   useEffect(() => {
-    const savedPreview = localStorage.getItem('saved_preview')
-    if (savedPreview) {
-      const preview = JSON.parse(savedPreview)
-      dispatch(loadComponentsFromExternal(preview))
+    if (!components || (components?.length===0)) {
+      const savedPreview = localStorage.getItem('saved_preview')
+      if (savedPreview) {
+        const preview = JSON.parse(savedPreview)
+        dispatch(loadComponentsFromExternal(preview))
+      }
     }
   }, [])
 
